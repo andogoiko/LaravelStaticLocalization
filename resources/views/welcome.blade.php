@@ -28,7 +28,12 @@
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             @include('partials/language_switcher')
             <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                {{ __('Welcome to our website, :Name', ['name' => 'paco']') }}
+                {{ __('Welcome to our website, :Name', ['name' => 'paco']) }}
+                <br>
+                {{-- trans_choice('There is one apple|There are many apples', 2) --}}
+                {{-- trans_choice('{0} There :form no apples|{1} There :form just :count apple|[2,19] There :form :count apples', 24) --}}
+                {{-- trans_choice('{0} There :form no apples|{1} There :form just :count apple|[2,19] There :form :count apples', 24, ['form' => 'is']) --}}
+                {{ trans_choice('{0} There :form no apples|{1} There :form just :count apple|[2,19] There :form :count apples', 1, ['form' => 'is']) }}
             </div>
         </div>
     </div>
