@@ -34,6 +34,9 @@
                 {{-- trans_choice('{0} There :form no apples|{1} There :form just :count apple|[2,19] There :form :count apples', 24) --}}
                 {{-- trans_choice('{0} There :form no apples|{1} There :form just :count apple|[2,19] There :form :count apples', 24, ['form' => 'is']) --}}
                 {{ trans_choice('{0} There :form no apples|{1} There :form just :count apple|[2,19] There :form :count apples', 1, ['form' => 'is']) }}
+                <br>
+                {{ $date_message }}
+
             </div>
         </div>
     </div>
